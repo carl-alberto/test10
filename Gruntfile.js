@@ -2,13 +2,13 @@
 /* global module */
 module.exports = function( grunt ) {
 	var HH_CSS = [
-			'plugins/helphub-post-types/assets/css/*.css',
-			'themes/helphub/**/*.css'
+			'plugins/PLUGINNAME/assets/css/*.css',
+			'themes/THEMENAME/**/*.css'
 		],
 
 		HH_JS = [
-			'plugins/helphub-post-types/assets/js/*.js',
-			'themes/helphub/js/*.js'
+			'plugins/PLUGINNAME/assets/js/*.js',
+			'themes/THEMENAME/js/*.js'
 		],
 
 		matchdep = require('matchdep');
@@ -21,7 +21,7 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		checktextdomain: {
 			options: {
-				text_domain: 'helphub',
+				text_domain: 'PLUGINNAME',
 				correct_domain: false,
 				keywords: [
 					'__:1,2d',
@@ -42,9 +42,9 @@ module.exports = function( grunt ) {
 			},
 			files: {
 				src: [
-					'plugins/helphub-post-types/**/*.php',
-					'plugins/helphub-read-time/**/*.php',
-					'themes/helphub/**/*.php'
+					'plugins/PLUGINNAME/**/*.php',
+					'plugins/PLUGINNAME/**/*.php',
+					'themes/THEMENAME/**/*.php'
 				],
 				expand: true
 			}
@@ -63,9 +63,9 @@ module.exports = function( grunt ) {
 			}
 		},
 		jshint: {
-			options: grunt.file.readJSON( '.jshintrc' ),
+			options: grunt.file.readJSON( 'buildtest/grunt/.jshintrc' ),
 			grunt: {
-				src: [ 'buildtest/grunt/Gruntfile.js' ]
+				src: [ 'Gruntfile.js' ]
 			},
 			core: {
 				expand: true,
