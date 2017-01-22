@@ -1,0 +1,35 @@
+{
+  "author": "Test travis builder",
+  "bugs": {
+    "url": "https://github.com/carl-alberto/test10/issues"
+  },
+  "description": "The WordPress user documentation portal.",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-check-dependencies": "~1.0.0",
+    "grunt-checktextdomain": "~1.0.1",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-jscs": "~3.0.1",
+    "grunt-jsvalidate": "~0.2.2",
+    "grunt-stylelint": "~0.6.0",
+    "matchdep": "~1.0.1",
+    "stylelint": "~7.7.0",
+    "stylelint-config-wordpress": "~9.1.1"
+  },
+  "engines": {
+    "node": ">=4.2.1"
+  },
+  "keywords": [
+    "community",
+    "helphub",
+    "support",
+    "wordpress"
+  ],
+  "homepage": "https://github.com/carl-alberto/test10",
+  "name": "HelpHub",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carl-alberto/test10"
+  },
+  "version": "0.1.0"
+}
