@@ -20,13 +20,10 @@
     "node": ">=4.2.1"
   },
   "keywords": [
-    "community",
-    "helphub",
-    "support",
-    "wordpress"
+    "CI test",
   ],
   "homepage": "https://github.com/carl-alberto/test10",
-  "name": "HelpHub",
+  "name": "Travis test",
   "repository": {
     "type": "git",
     "url": "https://github.com/carl-alberto/test10"
