@@ -74,9 +74,9 @@ script:
     - npm --version
     - node --version
     # Install NPM modules
-    #- npm install
-    #- npm install -g grunt-cli
+    - npm install
+    - npm install -g grunt-cli
     # Run CSS, JS, & PHP Grunt tasks (Temporarily using --force so all tasks run)
-    # - grunt --force
+     - grunt --force
     # PHPUnit
     # - cd .. && phpunit
