@@ -36,7 +36,7 @@ before_install:
 # Failures in this section will result in build status 'errored'.
 before_script:
     # Install phpunuit test suite
-    - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
+    - bash buildtest/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
     # Install CodeSniffer for WordPress Coding Standards checks.
     - mkdir php-codesniffer && curl -L https://github.com/squizlabs/PHP_CodeSniffer/archive/master.tar.gz | tar xz --strip-components=1 -C php-codesniffer
     # Install WordPress Coding Standards.
@@ -56,17 +56,17 @@ before_script:
 # All commands must exit with code 0 on success. Anything else is considered failure.
 script:
     # Change to the themes folder
-    # - cd themes // skip theme
+    - cd themes
     # Search theme for PHP syntax errors.
-    # - find . \( -name '*.php' \) -exec php -lf {} \; // if has theme
+    - find . \( -name '*.php' \) -exec php -lf {} \;
     # PHPCS WordPress Coding Standards
-    - php-codesniffer/scripts/phpcs -p -s -v -n . --standard=phpcs.ruleset.xml --extensions=php
+    - ../php-codesniffer/scripts/phpcs -p -s -v -n . --standard=../buildtest/phpcs.ruleset.xml --extensions=php
     # Change to the plugins folder
     - cd .. && cd plugins
     # Search theme for PHP syntax errors.
     - find . \( -name '*.php' \) -exec php -lf {} \;
     # PHPCS WordPress Coding Standards
-    - ../php-codesniffer/scripts/phpcs -p -s -v -n . --standard=../phpcs.ruleset.xml --extensions=php
+    - ../php-codesniffer/scripts/phpcs -p -s -v -n . --standard=../buildtest/phpcs.ruleset.xml --extensions=php
     # Setup NodeJS version using NVM
     - node --version
     - npm --version
