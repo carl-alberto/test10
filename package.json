@@ -3,7 +3,7 @@
   "bugs": {
     "url": "https://github.com/carl-alberto/test10/issues"
   },
-  "description": "The WordPress user documentation portal.",
+  "description": "Testin travis",
   "devDependencies": {
     "grunt": "~1.0.1",
     "grunt-check-dependencies": "~1.0.0",
@@ -23,7 +23,7 @@
     "travis test"
   ],
   "homepage": "https://github.com/carl-alberto/test10",
-  "name": "Travis test",
+  "name": "Test10",
   "repository": {
     "type": "git",
     "url": "https://github.com/carl-alberto/test10"
