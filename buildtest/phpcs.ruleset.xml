@@ -6,7 +6,7 @@
 	<!-- Set a description for this ruleset. -->
 	<description>A custom set of code standard rules to check for WordPress themes.</description>
 
-	<exclude-pattern>plugins/syntaxhighlighter/*</exclude-pattern>
+	<exclude-pattern>plugins/akismet/*</exclude-pattern>
 
 	<!-- Include the WordPress ruleset, with exclusions. -->
 	<rule ref="WordPress">
