@@ -79,4 +79,4 @@ script:
     # Run CSS, JS, & PHP Grunt tasks (Temporarily using --force so all tasks run)
     - grunt --force
     # PHPUnit
-    - cd .. && phpunit
+    # - cd .. && phpunit
