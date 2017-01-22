@@ -58,14 +58,14 @@ module.exports = function( grunt ) {
 		jscs: {
 			src: HH_JS,
 			options: {
-				config: '.jscsrc',
+				config: 'buildtest/grunt/.jscsrc',
 				fix: false // Autofix code style violations when possible.
 			}
 		},
 		jshint: {
 			options: grunt.file.readJSON( '.jshintrc' ),
 			grunt: {
-				src: [ 'Gruntfile.js' ]
+				src: [ 'buildtest/grunt/Gruntfile.js' ]
 			},
 			core: {
 				expand: true,
@@ -85,7 +85,7 @@ module.exports = function( grunt ) {
 		stylelint: {
 			css: {
 				options: {
-					configFile: '.stylelintrc.js',
+					configFile: 'buildtest/grunt/.stylelintrc.js',
 					format: 'css'
 				},
 				expand: true,
