@@ -146,10 +146,6 @@ class A_Test_10 {
 			$this->admin = new A_Test_10_Admin_API();
 		}
 
-//		$custom = new A_Test_10_Main;
-//		$custom->register_taxonomy1();
-//		$custom->register_cpt1();
-
 		// Handle localisation.
 		$this->load_plugin_textdomain();
 		add_action( 'init', array( $this, 'load_localisation' ), 0 );
