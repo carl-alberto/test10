@@ -20,7 +20,7 @@
     "node": ">=4.2.1"
   },
   "keywords": [
-    "CI test",
+    "travis test"
   ],
   "homepage": "https://github.com/carl-alberto/test10",
   "name": "Travis test",
